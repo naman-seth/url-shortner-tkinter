@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 tkinter
 pyshorteners==1.0.1
+=======
+tkinter
+pyshorteners==1.0.1
+>>>>>>> def8e2f852949967ececddba9b90856cd6f3754e
