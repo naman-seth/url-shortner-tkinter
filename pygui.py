@@ -3,7 +3,7 @@ import pyshorteners
 
 root = tkinter.Tk()
 root.title("Url shortner")
-root.geometry('300x150')
+root.geometry('300x150') #default window size
 
 def shorten():
     shortener = pyshorteners.Shortener()
