@@ -7,7 +7,11 @@ root.geometry('300x150') #default window size
 
 def shorten():
     shortener = pyshorteners.Shortener()
-    shortUrl=shortener.tinyurl.short(longurl_entry.get())  #to get longurl
+    oriurl = longurl_entry.get()
+    if oriurl.startswith("https://"):
+        shortUrl=shortener.tinyurl.short(oriurl)  #to get longurl
+    else:
+        shortUrl=shortener.tinyurl.short('https://'+oriurl)
     shorturl_entry.insert(0,shortUrl)
 # components
 longurl_Label = tkinter.Label(root,text="Enter long url")
